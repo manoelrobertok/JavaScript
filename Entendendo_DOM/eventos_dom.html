@@ -19,6 +19,7 @@
             line-height: 200px; /*Posicionamento ao centro*/
         }
 
+        
       
     </style>
 
@@ -28,6 +29,7 @@
 <body>
 
     <h1>Eventos DOM</h1>
+
     <p>Eventos é tudo aquilo que possa acontecer com qualquer elemento de nossa página.Nesse caso, a nossa div.</p>
 
     <div id="area" onclick="Clicar()" onmouseenter="entrar()" onmouseout="sair()">
@@ -36,11 +38,12 @@
     </div>
 
     <script>
-        var area = document.getElementById('area')
+        var area = document.getElementById('area') /*Estamos buscando o elemento pelo seu "id"(area).*/
           function Clicar(){
               area.innerText = 'Clicou!'
+          }
             
-        function entar(){
+        function entrar(){
             area.innerText = 'Entrou!'
         }
 
@@ -50,7 +53,7 @@
             
 
 
-         }
+         
     </script>
 </body>
 </html>
