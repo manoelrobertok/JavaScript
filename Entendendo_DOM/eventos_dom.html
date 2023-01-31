@@ -13,10 +13,15 @@
             font-size: 2em;
             border-radius: 10px; /*Bordas arredondadas*/
             color: white;
-            width: 200px; /*Largura*/
-            height: 200px; /*ALtura*/
+            width: 430px; /*Largura*/
+            height: 100px; /*ALtura*/
             text-align: center; /*Texto centralizado*/
-            line-height: 200px; /*Posicionamento ao centro*/
+            line-height: 100px; /*Posicionamento ao centro*/
+        }
+
+        div#area:hover{
+            background-color: darkred;
+            color:yellow;
         }
 
         
@@ -26,29 +31,35 @@
 </head>
 
 
+
 <body>
 
     <h1>Eventos DOM</h1>
 
-    <p>Eventos é tudo aquilo que possa acontecer com qualquer elemento de nossa página.Nesse caso, a nossa div.</p>
+    <p>Eventos é tudo aquilo que possa acontecer  <br> com qualquer elemento de nossa página.Nesse caso, a nossa div.</p>
 
-    <div id="area" onclick="Clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area">
         Interaja...
 
     </div>
 
     <script>
-        var area = document.getElementById('area') /*Estamos buscando o elemento pelo seu "id"(area).*/
-          function Clicar(){
-              area.innerText = 'Clicou!'
-          }
+        var a = document.getElementById('area') /*Identificamos o elemento pelo sua id.*/
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)  /*Criamos 3 eventos(clica, entrar e sair)*/
+        a.addEventListener('mouseout', sair)
+
+          function clicar(){
+              a.innerText = 'Clicou!' /*Determinamos que ao clicar, iria aparecer "Clicou!". */
+        }
             
         function entrar(){
-            area.innerText = 'Entrou!'
+            a.innerText = 'Entrou!'
         }
 
         function sair() {
-            area.innerText = 'Saiu!'
+            a.innerText = 'Saiu!'
         }
             
 
