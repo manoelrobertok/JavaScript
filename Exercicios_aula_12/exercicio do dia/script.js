@@ -3,7 +3,7 @@ var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('imagem')
 var data = new Date() //busca data no computador
 var hora = data.getHours()//busca a hora no computador
-var hora =19
+//var hora =19
 msg.innerHTML = `Agora são ${hora} horas.` //mensagem para a hora
 
   if (hora > 0 && hora < 12) { //se a hora estiver entre 0 e 12, mostrará a imagem da manhã.
