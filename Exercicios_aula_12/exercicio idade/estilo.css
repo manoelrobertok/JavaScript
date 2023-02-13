@@ -16,13 +16,18 @@
     padding: 20px;
  }
 
- img{
+img{
     
     border-radius:50%;
     width: 300px;
     height: 290px;
-    margin: center;
+   
     
+
+ }
+
+ div{
+   margin: center;
 
  }
 

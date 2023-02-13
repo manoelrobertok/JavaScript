@@ -26,8 +26,8 @@ function verificar() {
                 img.src = 'menino.png'
             }
 
-        else if (idade < 18) {
-                img.src = 'adolemasc.png'
+        else if (idade <= 18) {
+                img.src = 'adole_masc.png'
          }
           
         
