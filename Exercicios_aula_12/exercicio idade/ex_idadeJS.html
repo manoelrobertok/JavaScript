@@ -11,55 +11,51 @@
 
 </head>
 
-<body onload="verificar">
+<body>
 
     <header>
-        <h1>Vereficador de Idade</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
 
         <div>
-            <p>Ano de Nascimento:
-                <input type="number" name="iano" id="iano" min="0">
-            </p> <!--Formulário para inserir o ano de nascimento.-->
+           <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+           </p>
 
-            <p>Sexo:
+           <p>
+            Sexo: 
                 <input type="radio" name="radsex" id="masc" checked>
-                <label for="masc">Masculino</label>
-            <!--Preencher o sexo.-->
-
+                    <label for="masc">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-             <!--Preencher o sexo.-->
+                    <label for="fem">Feminino</label>
+           </p>
 
-            </p>
-
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>     <!--Botão verificar.-->
-                
+           <p>
+                <input type="button" value= "Verificar" onclick="verificar">
+           </p>
 
         </div>
 
-        <div id="res">
-
-            Preencha os dados acima corretamente!
+        <div id ="res">
+            <br>
+            Preencha as Informações acima para obter o resultado.
 
         </div>
-
-        <div id="foto">
-            <img src="menino.png" alt="menino">
-        </div>
-
-        
 
     </section>
 
 
+
+
     <footer>
-        <p>&copy; Manoel Korpalski</p>
+        <p>&copy; Por Manoel Korpalski</p>
+
+
     </footer>
+
+
 
 
     <script src="script.js"></script>
