@@ -1,4 +1,4 @@
-var idade = 16
+var idade = 100
     console.log(`Você tem ${idade} anos.`)
 
 
