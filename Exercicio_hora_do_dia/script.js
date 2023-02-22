@@ -2,7 +2,7 @@ function carregar() {
     var msg = window.document.getElementById('msg') //Criando a Var "msg"
     var img = window.document.getElementById('imagem') // criando a var "img"
     var data = new Date() // buscando a data atual
-    var hora = data.getHours()  // buscando a hora atual(computador)
+    var hora = 18//data.getHours()  // buscando a hora atual(computador)
     msg.innerHTML= `Agora são ${hora} horas.` //Definindo a mensagem.
 
     if (hora >=0 && hora <12){ //Se a hora for entre 0 e 12, manhã.
